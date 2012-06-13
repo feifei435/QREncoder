@@ -102,7 +102,7 @@ function shengcheng(neirong)
 		{
 			hideall();
 			document.getElementById('showqr').style.display="block";
-			document.getElementById('notice').innerHTML="<p>二维码生成成功！&nbsp;<a class='btn' href='"+image+"' target='_blank' title='立即下载'>立即下载</a>&nbsp</p><p>"+share("我的二维码，用QREncoder制作的！QREncoder可以将文本、网址、电话、短信、邮件甚至名片等信息快速转换为二维条形码。","我的二维码，用QREncoder制作的！QREncoder可以将文本、网址、电话、短信、邮件甚至名片等信息快速转换为二维条形码。","http://qrencoder.sinaapp.com",escape(image))+"</p>";
+			document.getElementById('notice').innerHTML="<p>二维码生成成功！&nbsp;<a class='btn' href='"+image+"' target='_blank' title='立即下载'>立即下载</a>&nbsp</p><p>"+share("我的二维码，用QREncoder制作的！QREncoder可以将文本、网址、电话、短信、邮件甚至名片等信息快速转换为二维条形码。","我的二维码，用QREncoder制作的！QREncoder可以将文本、网址、电话、短信、邮件甚至名片等信息快速转换为二维条形码。","http://qrencoder.sinaapp.com",encodeURIComponent(image))+"</p>";
 			document.getElementById('notice').style.display="block"; 
 		};
 		img.onerror = function()
