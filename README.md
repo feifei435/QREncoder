@@ -1,10 +1,10 @@
 # QREncoder
-QREncoder��һ�����߶�ά�����ɹ��ߣ����Խ��ı�����ַ���绰�����š��ʼ�������Ƭ����Ϣ����ת��Ϊ��ά�롣���ô�����˵��������лл��
+QREncoder是一个在线二维码生成工具，可以将文本、网址、电话、短信、邮件甚至名片等信息快速转换为二维码。引用代码请说明出处，谢谢。
 
-## Ч��չʾ
+## 效果展示
 * http://qrencoder.sinaapp.com
 
-## �����ĵ�
+## 相关文档
 1. https://google-developers.appspot.com/chart/infographics/docs/qr_codes
 2. http://www.cognation.net/QR/google_api.htm
 3. http://qrencoder.com
