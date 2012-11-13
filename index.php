@@ -1,3 +1,10 @@
+<?php
+if(strtolower($_SERVER['HTTP_HOST']) != 'www.qrencoder.org') { 
+header('HTTP/1.1 301 Moved Permanently'); 
+header('Location: http://www.qrencoder.org'.$_SERVER['REQUEST_URI']);//带后缀地址转发
+exit(); 
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,13 +22,14 @@
 -->
 <!---->
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://qrencoder.sinaapp.com/favicon.png">
-<link href="http://lib.sinaapp.com/js/bootstrap/latest/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="http://lib.sinaapp.com/js/bootstrap/2.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="http://qrencoder.sinaapp.com/script/bootstrap-tab.js"></script>
 <script language="javascript" type="text/javascript" src="http://qrencoder.sinaapp.com/script/bootstrap-alert.js"></script>
 <!---->
 <script language="javascript" type="text/javascript">
 /*引用代码请说明出处，谢谢。*/
+/*
 url="http://qrencoder.sinaapp.com";
 url1="http://qrencoder.sinaapp.com/";
 if(location.href!=url && location.href!=url1)
@@ -29,6 +37,7 @@ if(location.href!=url && location.href!=url1)
 	this.location = url;
 	window.location.href= url;
 }
+*/
 function share(title,content,url,img)
 {
 	str="";
@@ -142,12 +151,11 @@ function shengchengemail()
 }
 function shengchengcard()
 {
-	url=checkurl(document.getElementById('qrcardurl').value);
 	neirong="MECARD:N:"+document.getElementById('qrcardname').value+";";
 	neirong+="ADR:"+document.getElementById('qrcardadd').value+";";
 	neirong+="TEL:"+document.getElementById('qrcardtel').value+";";
 	neirong+="EMAIL:"+document.getElementById('qrcardmail').value+";";
-	neirong+="URL:"+url+";";
+	neirong+="URL:"+checkurl(document.getElementById('qrcardurl').value)+";";
 	neirong+="NOTE:"+document.getElementById('qrcardnote').value+";";
 	//neirong+="TIL:"+"til"+";";//职位
 	//neirong+="DIV:"+"div"+";";//部门
@@ -175,18 +183,26 @@ function shengchengcard()
 <!-- JiaThis Button BEGIN -->
 <div id="ckepop">
 <a href="http://www.jiathis.com/share?uid=895708" class="jiathis jiathis_txt" target="_blank"><img src="http://v3.jiathis.com/code/images/btn/v1/jiathis1.gif" border="0" /></a>
-<a class="jiathis_counter_style_margin:3px 0 0 2px"></a>
+<!--<a class="jiathis_counter_style_margin:3px 0 0 2px"></a>-->
 </div>
 <!-- JiaThis Button END -->
 </li>   
 </ul>
 <ul class="nav pull-right">
+<!--
 <li class="divider-vertical"></li>
+-->
 <li>
+<!--
 <form action="http://www.googlecn.org/" method="get" name="formsearch" target="_blank" class="navbar-search pull-left">
 <input type="text" name="s" id="s" class="search-query" placeholder="搜索" title="搜索">
 <input class="search-query" type="submit" value="搜索" title="搜索">
 </form>
+-->
+<form action="http://www.googlecn.org/" method="get" name="formsearch" target="_blank" class="navbar-search pull-left">
+							<input type="text" name="s" id="s" class="search-query" style="margin-top:-4px;" placeholder="在此输入要搜索的内容" title="在此输入要搜索的内容">
+							<input class="btn btn-primary" style="margin-top:1px;" type="submit" value="谷歌搜索" title="谷歌搜索">
+						</form>
 </li>
 </ul>
 </div>
@@ -297,12 +313,12 @@ function shengchengcard()
 <div class="row">
 <div class="span12">
 
+<!--
 <div class="well">
 <div class="alert alert-info" style="padding:10px; text-align:center; margin-bottom:0px;"><h4>欢迎评论</h4></div>
-<!-- PingLun.La Begin -->
 <div id="pinglunla_here"></div><a href="http://pinglun.la/" id="logo-pinglunla">评论啦</a><script type="text/javascript" src="http://static.pinglun.la/md/pinglun.la.js" charset="utf-8"></script>
-<!-- PingLun.La End -->
 </div>
+-->
 
 <div class="alert alert-info" style="text-align:center">
 CopyRight &copy; <script language="JavaScript" type="text/javascript">document.write(new Date().getFullYear());</script> QREncoder All Rights Reserved.
