@@ -14,10 +14,10 @@ Goto301("www.qrencoder.org");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="QREncoder,二维码,二维条形码,QR,Quick Response,生成" />
+<meta name="keywords" content="闪尼二维码在线生成器,QREncoder,二维码,二维条形码,QR,Quick Response,生成" />
 <meta name="description" content="QREncoder可以将文本、网址、电话、短信、邮件甚至名片等信息快速转换为二维条形码。二维条形码，简称二维码或QR（Quick Response）码，英文翻译为：Dimensional Bar Code。它可以存储数字、文本或者URL地址等信息。二维条形码解码需要专用的解码器，通常带有摄像头的手机都带有能够读取二维条形码的应用，如果您不明白某些参数的具体含义，请保持默认。" />
 <meta name="author" content="kandisheng" />
-<title>二维码生成器 - QREncoder</title>
+<title>闪尼二维码在线生成器 - ShareAny QREncoder</title>
 <!--
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.png">
 <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -180,7 +180,7 @@ function shengchengcard()
 <ul class="nav">
 <a class="brand" href="#" title="QREncoder">QREncoder</a>
 <li class="divider-vertical"></li>
-<li class="active000"><a href="#" title="二维码生成器">二维码生成器</a></li>
+<li class="active000"><a href="#" title="闪尼二维码在线生成器">闪尼二维码在线生成器</a></li>
 <li><a href="https://github.com/ShareAny/QREncoder" target="_blank" title="源代码">源代码</a></li>
 <li><a href="http://www.shareany.com/about/" target="_blank" title="关于">关于</a></li>
 <li class="divider-vertical"></li>
