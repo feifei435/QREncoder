@@ -1,9 +1,14 @@
 <?php
-if(strtolower($_SERVER['HTTP_HOST']) != 'www.qrencoder.org') { 
-header('HTTP/1.1 301 Moved Permanently'); 
-header('Location: http://www.qrencoder.org'.$_SERVER['REQUEST_URI']);//带后缀地址转发
-exit(); 
+function Goto301($URL)
+{
+	if(strtolower($_SERVER['HTTP_HOST']) != strtolower($URL))
+	{ 
+		header('HTTP/1.1 301 Moved Permanently'); 
+		header('Location: http://'.$URL.$_SERVER['REQUEST_URI']);
+		exit(); 
+	} 
 }
+Goto301("www.qrencoder.org");
 ?>
 <!DOCTYPE html>
 <html>
