@@ -181,8 +181,8 @@ function shengchengcard()
 <a class="brand" href="#" title="QREncoder">QREncoder</a>
 <li class="divider-vertical"></li>
 <li class="active000"><a href="#" title="二维码生成器">二维码生成器</a></li>
-<li><a href="https://github.com/KanDisheng/QREncoder" target="_blank" title="源代码">源代码</a></li>
-<li><a href="http://www.kandisheng.com" target="_blank" title="关于">关于</a></li>
+<li><a href="https://github.com/ShareAny/QREncoder" target="_blank" title="源代码">源代码</a></li>
+<li><a href="http://www.shareany.com/about/" target="_blank" title="关于">关于</a></li>
 <li class="divider-vertical"></li>
 <li style="margin-top:10px;">
 <!-- JiaThis Button BEGIN -->
